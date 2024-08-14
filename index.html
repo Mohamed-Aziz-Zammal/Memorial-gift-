@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>معايدة حب</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>ذكرى سعيدة!</h1>
+        <div class="rose" onclick="showMessage()">
+            🌹
+        </div>
+        <p id="message" class="hidden">أحبك من كل قلبي! ❤️</p>
+        <div id="question" class="hidden">
+            <p>هل ستبقى معي؟</p>
+            <button id="yesButton" onclick="showDateTimePicker()">نعم</button>
+            <button id="noButton">لا</button>
+        </div>
+        <div id="dateTimePicker" class="hidden">
+            <p>اختر موعدًا:</p>
+            <input type="datetime-local" id="dateTime">
+            <button onclick="sendEmail()">إرسال</button>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
